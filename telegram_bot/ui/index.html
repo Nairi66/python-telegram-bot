@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ARMFILMS - Bot Editor</title>
+	<link rel="icon" href="media/images/logo.png" type="image/png" sizes="16x16">
+	<link rel="stylesheet" href="media/reboot.min.css">
+	<link rel="stylesheet" href="media/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="media/uikit.min.css">
+	<link rel="stylesheet" href="media/main.css">
+</head>
+<body>
+	<div class="main_body">
+		<div class="wrapper">
+			<header>
+				<div class="logo__image">
+					<img src="media/images/logo.png" alt="Logo ARMFILMS">
+				</div>
+				<h1 class="logo__text">ARMFILMS - Bot Editor</h1>
+			</header>
+			<main>
+				<br>
+				<ul uk-accordion>
+					<li class="uk-open">
+						<a class="uk-accordion-title text-light" href="#">Settings :</a>
+						<div class="uk-accordion-content">
+							<div class="row">
+								<div class="col-3">
+									<div class="between">
+										<span ui>Token</span>
+										<span ui>:</span>
+									</div>
+								</div>
+								<div class="col-9">
+									<input type="text" id="token" placeholder="ID:HASH">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3">
+									<div class="between">
+										<span ui>Database Path</span>
+										<span ui>:</span>
+									</div>
+								</div>
+								<div class="col-9">
+									<input type="text" id="db_name" placeholder="db_name.db">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3">
+									<div class="between">
+										<span ui>Category not found</span>
+										<span ui>:</span>
+									</div>
+								</div>
+								<div class="col-9">
+									<input type="text" id="category_not_found" placeholder="undefined category">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3">
+									<div class="between">
+										<span ui>Categories text</span>
+										<span ui>:</span>
+									</div>
+								</div>
+								<div class="col-9">
+									<input type="text" id="categories_text" placeholder="categories \n {} ...">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3">
+									<div class="between">
+										<span ui>Base message</span>
+										<span ui>:</span>
+									</div>
+								</div>
+								<div class="col-9">
+									<input type="text" id="base_message" placeholder="Hi we are can find film for you">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3">
+									<div class="between">
+										<span ui>No film error (back)</span>
+										<span ui>:</span>
+									</div>
+								</div>
+								<div class="col-9">
+									<input type="text" id="no_film_error" placeholder="No films, pleace click next button">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3">
+									<div class="between">
+										<span ui>Unsubscribe global</span>
+										<span ui>:</span>
+									</div>
+								</div>
+								<div class="col-9">
+									<input type="text" id="global_unsubscribe" placeholder="You are unsubscribe from bot">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3">
+									<div class="between">
+										<span ui>Messages</span>
+										<span ui>:</span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1"></div>
+								<div class="col-4 col-sm-4">
+									<div class="between">
+										<span ui>Unsibscribe category</span>
+										<span ui>:</span>
+									</div>
+								</div>
+								<div class="col-7">
+									<input type="text" id="unsibscribe_category" placeholder="You are unsubscribed">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1"></div>
+								<div class="col-4 col-sm-4">
+									<div class="between">
+										<span ui>Subscribe category</span>
+										<span ui>:</span>
+									</div>
+								</div>
+								<div class="col-7">
+									<input type="text" id="subscribe_category" placeholder="You success subscribed">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-2 col-sm-1"></div>
+								<div class="col-4 col-sm-4">
+									<div class="between">
+										<span ui>Template</span>
+										<span ui>:</span>
+									</div>
+								</div>
+								<div class="col-7">
+									<input type="text" id="default_message" placeholder="Message - REPACEMENT">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-2 col-sm-1"></div>
+								<div class="col-4 col-sm-4">
+									<div class="between">
+										<span ui>Replacement</span>
+										<span ui>:</span>
+									</div>
+								</div>
+								<div class="col-7">
+									<input type="text" id="message_repl" placeholder="REPACEMENT">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1"></div>
+								<div class="col-4 col-sm-4">
+									<div class="between">
+										<span ui>Category new film</span>
+										<span ui>:</span>
+									</div>
+								</div>
+								<div class="col-7">
+									<input type="text" id="category_nufic_message" placeholder="Hi we are find new film for your category">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8">
+									<div>
+										<span ui> start message template</span>
+										<span ui>:</span>
+									</div>
+								</div>
+								<div class="col-4">
+									<div>
+										<span ui>Upd. time</span>
+										<span ui>:</span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8">
+									<input type="text" id="start_message" placeholder="Hi how are I'm admin of this bot">
+								</div>
+								<div class="col-4">
+									<input type="text" id="upd_time" placeholder="integer value days of update database">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12"><span ui>Catrgories : -JSON</span></div>
+								<div class="col-12">
+									<textarea id="categories" placeholder="{CATEGORY NAME (str) : page counts (int)}"></textarea>
+								</div>
+							</div>
+							<div class="end">
+								<button class="btn" id="save_settings">Save</button>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a class="uk-accordion-title text-light" href="#">Send Message :</a>
+						<div class="uk-accordion-content">
+							<div class="row">
+								<div class="col-md-2 col-sm-4">
+									<div class="flex">
+										<label for="sendall" >
+											<span ui>Send All :</span>
+										</label>
+										<input type="checkbox" id="send_all_check">
+									</div>
+								</div>
+								<div class="col-8">
+									<div class="row">
+										<div class="col-md-3">
+											<div class="between">
+												<span ui>select user</span>
+												<span ui>:</span>
+											</div>
+										</div>
+										<div class="col-md-9">
+											<select id="send_message_to">
+												<option default value="#">not user available</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<br>
+							<textarea placeholder="Hello ... " id="messge_to_users"></textarea>
+							<div class="end">
+								<button id="send_message_button" class="btn">Send</button>
+							</div>
+						</div>
+					</li>
+
+					</li>
+					<li class="uk-open">
+						<a class="uk-accordion-title text-light" href="#">Utilities :</a>
+						<div class="uk-accordion-content">
+							<div class="row">
+								<div class="col-md-3  col-sm-6">
+									<div class="between">
+										<span ui>Update Database</span>
+										<span ui>:</span>
+									</div>
+								</div>
+								<div class="col-md-2 col-sm-6">
+									<button class="btn" id="update_button" mini len>
+										Update
+									</button>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="between">
+										<span ui>Find Film</span>
+										<span ui>:</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-4">
+									<input type="text" name="" id="" placeholder="Film Name">
+								</div>
+								<div class="col-md-2 col-sm-5">
+									<button class="btn" mini len>
+										Find
+									</button>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-8 col-sm-12">
+									<textarea mini placeholder="Film names"></textarea>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<br>
+			</main>
+			<footer>
+				<button id="run_button"  class="btn">Run </button>
+				<button id="stop_button" class="btn">Stop</button>
+			</footer>
+		</div>
+	</div>
+
+	<script src="media/uikit-icons.min.js"></script>
+	<script src="media/uikit.min.js"></script>
+	<script src="eel.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

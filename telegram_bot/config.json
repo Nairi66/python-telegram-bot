@@ -1,0 +1,25 @@
+{
+	"token"                 : "",
+	"default_message"       : "Hi can i help you? FILMS",
+	"db_name"               : "main_database.db",
+	"message_repl"          : "FILMS",
+	"start_message"         : "Hi we are Started You can get information to films",
+	"upd_time"              : 20,
+	"category_nufic_message": "Hello I have New film in your subscribed category",
+	"no_film_error"         : "No films, pleace click next button",
+	"global_unsubscribe"    : "Դուք էլ չեք հանդիսանում մեր Բաժանորդը։ նորից բաժանորդագրվելու համար ուղղարկեք ցանկացած նամակ մեր բոթին:",
+	"unsibscribe_category"  : "դուք այլովս չեք հետեվում {} կատեգորիային",
+	"category_not_found"    : "Նման կատեգորիա գոյություն չունի",
+	"subscribe_category"    : "դուք հաջողությամբ հետեվում էք {} կատեգորիաի թարմացումներին",
+	"categories_text"       : "Կատեգորիաներ\n{}Subscribe լինելու համար ֊ /subscribe <b>CATEGORY<b>\nUnsunbscribe լինելու համար - /unsubscribe <b>CATEGORY<b>",
+	"base_message"          : "Բարեւ մեր նոր հետեվորդ խնդրում եմ սեխմեք list films որ թվարկենք ֆիլմերը",
+	"film_perc"             : 40,
+	"categories"            : {
+		"haykakan-filmer":9,
+		"haykakan-hin-filmer":9,
+		"hayeren-filmer":38,
+		"multfilmer":5,
+		"hayeren-multer":8,
+		"serialner":596
+	}
+}
